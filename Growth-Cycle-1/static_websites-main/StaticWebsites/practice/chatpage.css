@@ -1,0 +1,46 @@
+.bg-container{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png");
+    height: 100vh;
+    background-size: cover;
+}
+.heading{
+    margin-bottom: 60px;
+    font-family: "roboto",sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #323f4b;
+}
+.chat-card{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    text-align: right;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #47a3f3;
+    font-family: "roboto",sans-serif;
+}
+.chat-card1{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:15px;
+    text-align: left;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+    background-color: #52606d;
+    font-family: "roboto",sans-serif;
+}
+.chat-card2{
+    margin-top: 80px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    padding: 20px;
+    text-align: right;
+}

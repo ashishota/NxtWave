@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body, html {
+    height: 100vh;
+}
+
+.card-container {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    padding: 24px;
+}
+
+.text-heading{
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+}
+.text-description {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+.image-container,
+.video-container {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+
+.your-image{
+    padding: 18px;
+}
+.your-video {
+    height: 120px;
+    width: 90px;
+    padding: 24px;
+}
+
+.carousel-item img {
+    max-height: 300px; /* Adjust this value to your desired height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.carousel {
+    max-height: 300px; /* Adjust this value to your desired height */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.content{
+    flex: 1;
+    overflow-y: auto;
+}
+
+

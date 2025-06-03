@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+/* home section css code */
+.bg-container{
+    background-image: url("https://wallpapercave.com/wp/wp3480269.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.tourism-card{
+    text-align: center; 
+    background-color:white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 20px;
+    background-color: rgb(244, 233, 195);
+}
+.main-heading{
+    font-family: "roboto",sans-serif;
+}
+.paragraph{
+    font-family: "roboto",sans-serif;
+}
+.button{
+    height: 45px;
+    width: 138px;
+    background-color: #25b1cc;
+    color: white;
+    border-radius: 25px;
+    border-width: 0px;
+}
+
+/* favourite places css code */
+.favourite-places-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  .favourite-places-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px;
+  }
+  
+  .favourite-place-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    margin: 15px;
+  }
+  
+  .favourite-place-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  .favourite-place-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+  }
+  
+  .favourite-place-card-image {
+    width: 80px;
+    height: 100px;
+  }
+  .container {
+      display: flex; /* Use Flexbox */
+      justify-content: flex-end; /* Move the image to the right */
+      /* You can also use other properties such as align-items if needed */
+  }
+  .your-image{
+      width: 80px;
+      height: 100px;
+  }
+  
+/* detailed view section css code */
+.dv-bg-container{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
+    background-size: cover;
+    height: 100vh;
+}
+.dv-heading{
+    font-family: roboto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 24px;
+}
+.dv-card-container{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+.your-carousel{
+    height: 33vh;
+}
+.tc-heading{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    color: #0f0e46;
+}
+.tc-description{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    color: #6c6b70;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- css file link -->
+    <link rel="stylesheet" type="text/css" href="webint.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Tourism</h1>
+                <p class="paragraph">
+                Plan your trip wherever you want to go.
+                </p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Char Dham Yatra</h1>
+            <div class="favourite-place-card-container d-flex flex-row"
+             onclick="display('sectionPuriDetailedView')"
+            >
+              <div>
+              <h1 class="favourite-place-card-heading">Puri</h1>
+              <p class="favourite-place-card-description">
+                  Puri, located in the east, is located in the state of Odisha, India.
+                  Puri is one of the oldest cities in the eastern part of the country.
+                  It is situated on the Bay of Bengal coast. The main deity is Krishna, revered as Jagannatha.
+              </p>
+              </div>
+              <div class="container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Temple-Jagannath.jpg" class="your-image">
+              </div>
+                
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row"
+             onclick="display('sectionRameshwaramDetailedView')">
+              <div>
+              <h1 class="favourite-place-card-heading">Rameswaram</h1>
+              <p class="favourite-place-card-description">
+                  Rameswaram is located in the state of Tamil Nadu, in the southern part of the Indian peninsula.
+                  According to legends, this is the place where Rama, along with his brother Lakshmana and devotee Hanuman,
+                  built a bridge (Rama Setu) to reach Lanka to rescue his wife Sita, who had been abducted earlier by Ravana,the ruler of Lanka.
+              </p>
+              </div>
+              <div class="container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rameswaram_temple_%2811%29.jpg/1280px-Rameswaram_temple_%2811%29.jpg" class="your-image">
+              </div>
+                
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row"
+            onclick="display('sectionDwarkaDetailedView')">
+              <div>
+              <h1 class="favourite-place-card-heading">Dwarka </h1>
+              <p class="favourite-place-card-description">
+                  Dwarka is located in the state of Gujarat, on the western coast of India.
+                  The city derives its name from the word "dvara" meaning door or gate in the Sanskrit language.
+                  It is located confluence where the Gomti River merges into the Arabian Sea.
+              </p>
+              </div>
+              <div class="container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Dwarkadheesh_temple.jpg" class="your-image">
+              </div>
+                
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row"
+            onclick="display('sectionBadrinathDetailedView')">
+              <div>
+              <h1 class="favourite-place-card-heading">Badrinath</h1>
+              <p class="favourite-place-card-description">
+                  Badrinath is located in the state of Uttarakhand. It is in the Garhwal hills, on the Alaknanda River banks.
+                  The town lies between the Nar and Narayana mountain ranges and in the shadow of Nilkantha peak (6,560 m).
+              </p>
+              </div>
+              <div class="container">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Badrinath_Temple%2C_Uttarakhand_%28Photo-_Vishwanath_Negi%29.jpg/1920px-Badrinath_Temple%2C_Uttarakhand_%28Photo-_Vishwanath_Negi%29.jpg" class="your-image">
+              </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">
+                Back
+            </button>    
+        </div>
+    </div>
+
+    <div id="sectionPuriDetailedView">
+        <div class="dv-bg-container">
+            <h1 class="dv-heading">
+                Detailed View
+            </h1>
+        
+            <div class="dv-card-container">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.tripsavvy.com/thmb/k8iAiXFgnxkFdpBg-pAbinfu9Jc=/3696x2448/filters:no_upscale():max_bytes(150000):strip_icc()/_DSC0737_Darkroom-dddfe7705a3d4b90a335a87e728eddaf.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.tripsavvy.com/thmb/3pNFFiPbSTcg-CgGNE8Wx_NsyqM=/3559x2357/filters:fill(auto,1)/_DSC0713_Snapseed_Darkroom-819d0b229974460e8141622c4494e2ed.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/R.067f594573dc726e41c50b2e6cf96f14?rik=%2bWFWZc5Nf4R5IQ&riu=http%3a%2f%2fwww.gozocabs.com%2fblog%2fwp-content%2fuploads%2f2018%2f03%2fjagannath-temple.jpg&ehk=IGCbBNZ%2bR5YYyxIeoOWlZ8NMVG6R0xhgPkdIzxcYXMU%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+                
+                <div>  
+                    <h1 class="tc-heading">
+                        Puri Jagannath Temple
+                    </h1>
+                    <p class="tc-description">
+                        The Jagannath Temple is an important Hindu temple dedicated to Jagannath, a form of Vishnu,
+                        one of the trinity of supreme divinity in Hinduism.
+                        Puri is in the state of Odisha, on the eastern coast of India.
+                        King Indradyumna of Avanti has built the main temple of Jagannath at Puri.
+                        The present temple was rebuilt from the tenth 10th century onwards,
+                        on the site of pre-existing temples in the compound but not the main Jagannatha temple,
+                        and begun by Anantavarman Chodaganga, the first king of the Eastern Ganga dynasty.
+                        The temple is one of the 108 Abhimana Kshethram of Vaishnavate tradition.
+                    </p>
+                    
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button> 
+        </div>
+    </div>
+
+    <div id="sectionRameshwaramDetailedView">
+        <div class="dv-bg-container">
+            <h1 class="dv-heading">
+                Detailed View
+            </h1>
+        
+            <div class="dv-card-container">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.rameswaramtaxi.in/img/carousel-1.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://varahicabs.in/wp-content/uploads/2023/07/rameshwaram_temple-edited-2.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_409553653_20200226101505.png" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+                
+                <div>  
+                    <h1 class="tc-heading">
+                        Rameshwaram Temple
+                    </h1>
+                    <p class="tc-description">
+                        Rameswaram  is a municipality in the Ramanathapuram district of the Indian state of Tamil Nadu.
+                        It is on Pamban Island separated from mainland India by the Pamban channel and is about 40 kilometres from Mannar Island, Sri Lanka. 
+                        It is in the Gulf of Mannar, at the tip of the Indian peninsula. Pamban Island, also known as Rameswaram Island, is connected to mainland India by the Pamban Bridge.
+                        Rameswaram is the terminus of the railway line from Chennai and Madurai.
+                        Together with Varanasi, it is considered to be one of the holiest places in India to Hindus and is part of the Char Dham pilgrimage.
+                    </p>
+                    
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+        
+
+    </div>
+    <div id="sectionDwarkaDetailedView">
+        <div class="dv-bg-container">
+            <h1 class="dv-heading">
+                Detailed View
+            </h1>
+        
+            <div class="dv-card-container">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/dwarkadhish-temple/Dwarkadhish-Temple-1.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.toiimg.com/photo/105070948/Dwarka-Gujarat.jpg?width=748&resize=4" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://shivshankartirthyatra.com/assets/images/spiritual-tours/dwarkapuri-dham.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+                
+                <div>  
+                    <h1 class="tc-heading">
+                        Dwarka 
+                    </h1>
+                    <p class="tc-description">
+                        Dwarka on the western tip of the Kathiawar Peninsula is clubbed with the holiest sites in India , the Char Dhams that include Badrinath, Puri and Rameshwaram. 
+                        It is believed that Lord Krishna arrived here from Braj in Uttar Pradesh to build the city. 
+                        The Dwarkadheesh temple was established by his grandson. It is at the cusp of the Gomti River and the Arabian Sea, providing a scenic backdrop to the spiritual site.
+                        It is said that Dwarka was submerged under the sea six times and what we see now is its seventh avatar. The temple itself has a fascinating legend.
+                        The original structure was destroyed by Mahmud Begada in 1472, and subsequently rebuilt in the 15th-16th century. 
+                        It was also feted by Adi Shankaracharya, the 8th century Hindu theologian and philosopher.
+                    </p>
+                    
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+    </div>
+    
+    <div id="sectionBadrinathDetailedView">
+        <div class="dv-bg-container">
+            <h1 class="dv-heading">
+                Detailed View
+            </h1>
+        
+            <div class="dv-card-container">
+                
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.pilgrimagetour.in/blog/wp-content/uploads/2023/09/Best-Time-to-Visit-Badrinath-Dham.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://gokeys.in/wp-content/uploads/2022/03/Badrinath-dham-temple.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://english.janamtv.com/wp-content/uploads/2024/02/badrinath-one_one.jpg" class="d-block w-100 your-carousel" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+                
+                <div>  
+                    <h1 class="tc-heading">
+                        Badrinath
+                    </h1>
+                    <p class="tc-description">
+                        Badarinath or Badarinarayana Temple is a Hindu temple dedicated to Vishnu. 
+                        It is situated in the town of Badrinath in Uttarakhand, India. 
+                        The temple is also one of the 108 Divya Desams dedicated to Vishnu—holy shrines for Vaishnavas—who is worshipped as Badrinath. 
+                        It is open for six months every year (between the end of April and the beginning of November), 
+                        because of extreme weather conditions in the Himalayan region. 
+                        The temple is located in Garhwal hill tracks in Chamoli district along the banks of Alaknanda River.
+                    </p>
+                    
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                Back
+            </button>
+        </div>
+        
+        
+    </div>
+
+
+    <script type="text/javascript" 
+    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+    </script>
+  </body>
+</html>
