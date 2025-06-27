@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="bg-container d-flex flex-column justify-content-center align-items-center text-center" id="colorPickerContainer">
+      <h1 class="mb-4" style="font-weight: 800; font-family: 'Open Sans';">Color Picker</h1>
+      
+      <div class="d-flex justify-content-center flex-wrap mb-3">
+        <button class="color-button" style="background-color: #e0e0e0;" onclick="changeBackgroundColor('#e0e0e0')">#e0e0e0</button>
+        <button class="color-button" style="background-color: #6fcf97;" onclick="changeBackgroundColor('#6fcf97')">#6fcf97</button>
+        <button class="color-button" style="background-color: #56ccf2;" onclick="changeBackgroundColor('#56ccf2')">#56ccf2</button>
+        <button class="color-button" style="background-color: #bb6bd9;" onclick="changeBackgroundColor('#bb6bd9')">#bb6bd9</button>
+      </div>
+
+      <p class="bg-color-text">Background Color : <span style="color:#49a6e9;" id="selectedColorHexCode">#ffffff</span></p>
+      <p class="m-2">Try clicking on one of the colors above to change the background color of this page!</p>
+    
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
